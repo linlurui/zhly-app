@@ -1,0 +1,155 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/text_dark_gray</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- android:textColorPrimary is the color of the title text in the Toolbar  -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- actionMenuTextColor is the color of the text of action (menu) items  -->
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <!-- Tints the input fields like checkboxes and text fields -->
+        <item name="colorAccent">@android:color/white</item>
+        <!-- Applies to views in their normal state. -->
+        <item name="colorControlNormal">@android:color/white</item>
+        <!-- Applies to views in their activated state (i.e checked or switches) -->
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <!-- Applied to framework control highlights (i.e ripples or list selectors) -->
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="jx_label_minor" parent="jx_label_main">
+        <item name="android:textColor">@color/jx_label_text_minor</item>
+    </style>
+
+    <style name="jx_label_main_15sp" parent="jx_label_main">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!-- 主名称文本样式 -->
+    <style name="jx_label_main">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/jx_label_text_main</item>
+        <item name="android:textColorHint">@color/jx_text_hint</item>
+        <item name="android:drawablePadding">@dimen/jx_drawable_padding</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 值文本样式 -->
+    <style name="jx_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/jx_value_text</item>
+        <item name="android:drawablePadding">@dimen/jx_drawable_padding</item>
+    </style>
+
+    <declare-styleable name="LabelIconRow">
+        <attr name="labelIcon" format="reference"/>
+        <attr name="labelScaleIcon" format="reference"/>
+        <attr name="labelText" format="string"/>
+        <attr name="labelValue" format="string"/>
+        <attr name="labelTopDivider" format="boolean"/>
+        <attr name="labelBottomDivider" format="boolean"/>
+        <attr name="labelArrows" format="boolean"/>
+        <attr name="labelValueRight" format="boolean"/>
+        <attr name="labelHint" format="string"/>
+        <attr name="labelValueColor" format="color"/>
+        <attr name="labelTextColor" format="color"/>
+        <attr name="labelHintColor" format="color"/>
+        <attr name="labelExactlyWidth" format="dimension"/>
+        <attr name="labelTextSize" format="dimension"/>
+        <attr name="labelValueSize" format="dimension" />
+        <attr name="labelDividerIndent" format="dimension" />
+        <attr name="labelUnit" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="LabelEditRow">
+        <attr name="labelPasswordMode" format="boolean"/>
+        <attr name="labelNumberDecimalMode" format="boolean"/>
+        <attr name="labelNumberMode" format="boolean"/>
+        <attr name="android:inputType"/>
+        <attr name="android:maxLength"/>
+    </declare-styleable>
+    <!-- LabelTextRow样式-->
+    <style name="jx_label_row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/selector_lv_item</item>
+    </style>
+
+    <declare-styleable name="CalendarView">
+
+        <attr name="week_background" format="color" /><!--星期栏背景色-->
+        <attr name="week_line_background" format="color" /><!--星期栏线的颜色-->
+        <attr name="week_text_color" format="color" /><!--星期栏文本颜色-->
+        <attr name="week_bar_view" format="string" /><!--如果需要的话使用自定义星期栏-->
+
+        <attr name="month_view" format="string" /><!--完全自定义月视图路径-->
+        <attr name="week_view" format="string" /><!--完全自定义周视图路径-->
+
+        <attr name="scheme_text" format="string" /><!--标记的文本，一般可忽略-->
+        <attr name="day_text_size" format="dimension" /><!--日期字体大小-->
+        <attr name="lunar_text_size" format="dimension" /><!--农历字体大小-->
+        <attr name="calendar_height" format="dimension" /><!--日历卡的高度，每一项，不是整体-->
+        <attr name="scheme_text_color" format="color" /><!--标记的文本颜色-->
+        <attr name="scheme_month_text_color" format="color" /><!--标记的月字体颜色-->
+        <attr name="scheme_lunar_text_color" format="color" /><!--标记的农历字体颜色-->
+        <attr name="scheme_theme_color" format="color" /><!--标记的背景主题颜色-->
+
+        <attr name="selected_theme_color" format="color" /><!--选择的背景主题颜色-->
+        <attr name="selected_text_color" format="color" /><!--选中的月字体颜色-->
+        <attr name="selected_lunar_text_color" format="color" /><!--选中的农历字体颜色-->
+
+        <attr name="current_day_text_color" format="color" /><!--今天的日子字体颜色-->
+        <attr name="current_day_lunar_text_color" format="color" /><!--今天的日子农历字体颜色-->
+        <attr name="current_month_text_color" format="color" /><!--当前月份卡的月字体颜色，非今天所在的月份-->
+        <attr name="other_month_text_color" format="color" /><!--当前月份卡其它月字体颜色-->
+        <attr name="current_month_lunar_text_color" format="color" /><!--当前月份月农历颜色-->
+        <attr name="other_month_lunar_text_color" format="color" /><!--其它月份农历字体颜色-->
+
+        <!-- 年视图相关 -->
+        <attr name="year_view_month_text_size" format="dimension" /><!--年视图月字体大小-->
+        <attr name="year_view_day_text_size" format="dimension" /><!--年视图日字体大小-->
+        <attr name="year_view_month_text_color" format="color" /><!--年视图月字体颜色-->
+        <attr name="year_view_day_text_color" format="color" /><!--年视图日子字体颜色-->
+        <attr name="year_view_scheme_color" format="color" /><!--年视图标记字体颜色-->
+        <attr name="year_view_background" format="color" /><!--年视图背景-->
+        <!---->
+
+        <attr name="min_year" format="integer" /><!--最小年份-->
+        <attr name="max_year" format="integer" /><!--最大年份-->
+        <attr name="min_year_month" format="integer" /><!--最小年份对应最小月份-->
+        <attr name="max_year_month" format="integer" /><!--最大年份对应月份-->
+
+        <!--配置你喜欢的月视图显示模式模式-->
+        <attr name="month_view_show_mode">
+            <enum name="mode_all" value="0" /> <!--全部显示-->
+            <enum name="mode_only_current" value="1" /> <!--仅显示当前月份-->
+            <enum name="mode_fix" value="2" /> <!--自适应显示，不会多出一行，但是会自动填充-->
+        </attr>
+
+        <!-- 自定义周起始 -->
+        <attr name="week_start_with">
+            <enum name="sun" value="1" />
+            <enum name="mon" value="2" />
+            <enum name="sat" value="7" />
+        </attr>
+    </declare-styleable>
+
+    <style name="Animation_Pop_style">
+        <item name="android:windowEnterAnimation">@anim/popshow</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pophide</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+</resources>

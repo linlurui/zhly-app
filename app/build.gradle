@@ -1,0 +1,99 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.yizhitong.wisdombuilding"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            //设置支持的SO库架构
+            abiFilters "armeabi-v7a", "x86"
+        }
+    }
+    signingConfigs {
+        hujiang {
+            keyAlias 'key0'
+            keyPassword 'hujiang123'
+            storeFile file('E:/code/WisdomBuilding/wisdombuild.jks')
+            storePassword 'hujiang123'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.hujiang
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.hujiang
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+def dbFlow_version = "4.2.4"
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.android.support:support-v4:29.0.0'
+    implementation 'com.android.support:appcompat-v7:29.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:29.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.blankj:utilcode:1.23.2'
+    implementation 'com.wang.avi:library:2.1.3'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    implementation 'cn.finalteam:okhttpfinal:2.0.7'
+    implementation 'com.orhanobut:logger:2.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.4.0' //添加支持
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0' //Glide4.x以上需要添加的支持
+    implementation 'com.github.forvv231:EasyNavigation:1.0.3'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation 'com.gyf.immersionbar:immersionbar:2.3.3-beta09'
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbFlow_version}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-core:${dbFlow_version}"
+    implementation "com.github.Raizlabs.DBFlow:dbflow:${dbFlow_version}"
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-15'
+    implementation 'com.github.pqpo:SmartCamera:v2.0.0'
+    implementation 'top.zibin:Luban:1.1.8'
+    implementation project(':facesdk')
+    implementation('com.github.gzu-liyujiang.AndroidPicker:WheelPicker:1.5.6.20181018') {
+        exclude group: 'com.android.support'
+    }
+    implementation 'com.mikepenz:iconics-core:3.0.3@aar'
+    implementation 'com.mikepenz:iconics-views:3.0.3@aar'
+    implementation 'com.mikepenz:google-material-typeface:3.0.1.2.original@aar'
+    implementation 'com.mikepenz:material-design-iconic-typeface:2.2.0.4@aar'
+    implementation 'com.mikepenz:ionicons-typeface:2.0.1.4@aar'
+
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.42'
+    implementation 'com.github.bumptech.glide:glide:4.4.0' //添加支持
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0' //Glide4.x以上需要添加的支持
+
+}

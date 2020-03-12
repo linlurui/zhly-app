@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">智慧楼宇</string>
+    <string name="ok">好的</string>
+    <string name="kind_tip">智慧楼宇</string>
+    <string name="server_response_failure">网络请求失败，请重试</string>
+    <string name="loading">正在加载&#8230;</string>
+    <string name="sign_in_failed">登录失败，请重试</string>
+    <string name="account_hint">请输入账号</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="hujiang_company_cn">华远电气股份有限公司</string>
+    <string name="hujiang_company_en">HUAYUAN Electric Co., Ltd</string>
+
+    <string name="home_gradle">智慧楼宇\n一种全新的智能楼宇\n管理模式</string>
+
+    <string name="app_unll">***</string>
+    <string name="empty_data">暂无数据</string>
+
+    <string name="personnel_mg">人员管理</string>
+    <string name="not_open">此功能暂未开放</string>
+
+    <!-- 我的页面显示文本 -->
+    <string name="mani_customer">我的客服</string>
+    <string name="mani_password">修改密码</string>
+    <string name="mani_callback">用户反馈</string>
+    <string name="mani_ours">关于我们</string>
+    <string name="mani_setting">系统设置</string>
+
+    <string name="ocr_loading">正在识别&#8230;</string>
+    <string name="ocr_upload">正在上传&#8230;</string>
+    <string name="take_card">扫描卡片</string>
+    <string name="take_id_card_front">扫描身份证正面</string>
+    <string name="take_id_card_back">扫描身份证背面</string>
+    <string name="take_bank_card_front">扫描银行卡正面</string>
+    <string name="take_bank_card_back">扫描银行卡背面</string>
+    <string name="scan_card_tip">请将卡片置于扫描框内</string>
+    <string name="id_card_front_info">身份证正面信息</string>
+    <string name="id_card_back_info">身份证背面信息</string>
+    <string name="bank_card_info">银行卡信息</string>
+    <string name="id_no">身份证号</string>
+    <string name="name">姓名</string>
+    <string name="face_header">人脸头像</string>
+    <string name="sex">性别</string>
+    <string name="nation">民族</string>
+    <string name="birthday">出生日期</string>
+    <string name="live_address">详细住址</string>
+    <string name="id_issuer">签发机关</string>
+    <string name="id_valid_date">有效期限</string>
+    <string name="bank_no">银行卡号</string>
+    <string name="bank_name">开户行</string>
+    <string name="next">下一步</string>
+
+    <string name="face_detect_tip">温馨提示：仅实时检测画面内面积最大的人脸</string>
+    <string name="face_id_verify">人证比对</string>
+    <string name="face_attend">人脸考勤</string>
+    <string name="change_face_id_verify">人脸修改</string>
+    <string name="face_id_card_verify_succeed">人证比对成功，点击下一步识别身份证背面</string>
+    <string name="face_attend_succeed_score_format">--人脸考勤成功</string>
+    <string name="face_id_card_not_match_tip">人证比对失败，请重新比对</string>
+    <string name="face_id_face_not_match_tip">人脸不匹配</string>
+    <string name="net_unknown_error">未知错误，请稍后重试</string>
+    <string name="ocr_info_invalid_tip">识别结果不正确，请重新扫描</string>
+    <string name="input_invalid">输入错误，请重输</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="cancel_register_tip">确定要退出实名登记吗？</string>
+    <string name="retry_scan">重新扫描</string>
+    <string name="cancel_register">退出登记</string>
+    <string name="exit">退出</string>
+    <string name="welcome_activity_label">启动页面</string>
+    <string name="title_activity_login">登录页面</string>
+    <string name="title_activity_face">人脸考勤</string>
+    <string name="title_activity_ocr_info">扫描卡片信息</string>
+    <string name="title_activity_supplement">补充信息</string>
+    <string name="title_activity_info">信息查询</string>
+    <string name="title_activity_personnel">个人信息</string>
+    <string name="title_activity_change">修改密码</string>
+    <string name="title_activity_setting">系统设置</string>
+    <!-- 我的页面显示文本 -->
+    <string name="supplement_company">所属公司</string>
+    <string name="supplement_department">所属部门</string>
+    <string name="supplement_storey">所属楼层</string>
+    <string name="supplement_remarks">备注：</string>
+
+    <!-- 个人信息页面显示文本 -->
+    <string name="personnel_id">身份证号</string>
+    <string name="personnel_name">姓名</string>
+    <string name="personnel_sex">性别</string>
+    <string name="personnel_nation">民族</string>
+    <string name="personnel_birthday">出生日期</string>
+    <string name="personnel_address">详细地址</string>
+    <string name="personnel_agency">签发机关</string>
+    <string name="personnel_valid">有效期</string>
+
+    <string name="sign_out">退出登录</string>
+    <string name="sign_out_tip">确定要退出登录当前用户吗？</string>
+</resources>

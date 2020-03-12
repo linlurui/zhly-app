@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.yizhitong.wisdombuilding.view.LabelTextRow
+            android:id="@+id/supplement_company"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            app:labelArrows="true"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="40dp"
+            app:labelText="@string/supplement_company"
+            app:labelTextSize="16px"
+            app:labelValue="@string/supplement_company" />
+
+        <com.yizhitong.wisdombuilding.view.LabelEditRow
+            android:id="@+id/supplement_department"
+            style="@style/jx_label_row"
+            android:layout_marginTop="10dp"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="@dimen/jx_content_padding"
+            app:labelHint="请输入所属楼层"
+            app:labelText="@string/supplement_department"
+            app:labelTextSize="16px" />
+
+        <com.yizhitong.wisdombuilding.view.LabelEditRow
+            android:id="@+id/supplement_storey"
+            style="@style/jx_label_row"
+            android:layout_marginTop="10dp"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="@dimen/jx_content_padding"
+            app:labelHint="请输入所属楼层"
+            app:labelText="@string/supplement_storey"
+            app:labelTextSize="16px" />
+
+        <com.yizhitong.wisdombuilding.view.LabelEditRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            app:labelArrows="false"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="40dp"
+            app:labelText="@string/supplement_remarks"
+            app:labelTextSize="16px" />
+
+        <EditText
+            android:id="@+id/supplement_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_lv_item"
+            android:gravity="top"
+            android:hint="请输入备注"
+            android:minHeight="@dimen/dp_50"
+            android:minLines="5"
+            android:padding="@dimen/dp_20"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_blue_dark"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</RelativeLayout>

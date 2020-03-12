@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg_color"
+    android:orientation="vertical">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.yizhitong.wisdombuilding.view.LabelTextRow
+            android:id="@+id/personnel_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            app:labelArrows="false"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="40dp"
+            app:labelText="@string/personnel_id"
+            app:labelTextSize="16px" />
+
+        <com.yizhitong.wisdombuilding.view.LabelTextRow
+            android:id="@+id/personnel_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:labelArrows="false"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="40dp"
+            app:labelText="@string/personnel_name"
+            app:labelTextSize="16px" />
+
+        <com.yizhitong.wisdombuilding.view.LabelTextRow
+            android:id="@+id/personnel_sex"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:labelArrows="false"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="40dp"
+            app:labelText="@string/personnel_sex"
+            app:labelTextSize="16px" />
+
+        <com.yizhitong.wisdombuilding.view.LabelTextRow
+            android:id="@+id/personnel_nation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:labelArrows="false"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="40dp"
+            app:labelText="@string/personnel_nation"
+            app:labelTextSize="16px" />
+
+        <com.yizhitong.wisdombuilding.view.LabelTextRow
+            android:id="@+id/personnel_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:labelArrows="false"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="40dp"
+            app:labelText="@string/personnel_birthday"
+            app:labelTextSize="16px" />
+
+        <com.yizhitong.wisdombuilding.view.LabelTextRow
+            android:id="@+id/personnel_address"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:labelArrows="false"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="40dp"
+            app:labelText="@string/personnel_address"
+            app:labelTextSize="16px" />
+
+        <com.yizhitong.wisdombuilding.view.LabelTextRow
+            android:id="@+id/personnel_agency"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:labelArrows="false"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="40dp"
+            app:labelText="@string/personnel_agency"
+            app:labelTextSize="16px" />
+
+        <com.yizhitong.wisdombuilding.view.LabelTextRow
+            android:id="@+id/personnel_valid"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:labelArrows="false"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="40dp"
+            app:labelText="@string/personnel_valid"
+            app:labelTextSize="16px" />
+
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:padding="@dimen/dp_25"
+            android:scaleType="centerInside"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_front"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_25"
+            android:scaleType="centerInside"
+            app:layout_constraintDimensionRatio="100:63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="@dimen/dp_25"
+            android:scaleType="centerInside"
+            app:layout_constraintDimensionRatio="100:63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+   </ScrollView>
+</LinearLayout>
+
