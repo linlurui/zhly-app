@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:background="@color/bg_blue" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_blue"
+        android:gravity="center"
+        android:text="我的"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+    <LinearLayout
+        android:id="@+id/cellAboutAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:lineSpacingExtra="@dimen/dp_4"
+            android:text="@string/app_unll"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+            android:textColor="@color/text_dark_gray" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_20"/>
+    </LinearLayout>
+
+    <com.yizhitong.wisdombuilding.view.LabelTextRow
+        android:id="@+id/mani_customer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:labelArrows="true"
+        app:labelBottomDivider="false"
+        app:labelDividerIndent="40dp"
+        app:labelIcon="@drawable/customer"
+        app:labelText="@string/mani_customer"
+        app:labelTextSize="16px" />
+
+    <com.yizhitong.wisdombuilding.view.LabelTextRow
+        android:id="@+id/mani_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:labelArrows="true"
+        app:labelBottomDivider="false"
+        app:labelDividerIndent="40dp"
+        app:labelIcon="@drawable/password"
+        app:labelText="@string/mani_password"
+        app:labelTextSize="16px" />
+
+    <com.yizhitong.wisdombuilding.view.LabelTextRow
+        android:id="@+id/mani_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:labelArrows="true"
+        app:labelBottomDivider="false"
+        app:labelDividerIndent="40dp"
+        app:labelIcon="@drawable/callback"
+        android:visibility="gone"
+        app:labelText="@string/mani_callback"
+        app:labelTextSize="16px" />
+
+    <com.yizhitong.wisdombuilding.view.LabelTextRow
+        android:id="@+id/mani_ours"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:labelArrows="true"
+        android:visibility="gone"
+        app:labelBottomDivider="false"
+        app:labelDividerIndent="40dp"
+        app:labelIcon="@drawable/ours"
+        app:labelText="@string/mani_ours"
+        app:labelTextSize="16px" />
+
+    <com.yizhitong.wisdombuilding.view.LabelTextRow
+        android:id="@+id/mani_setting"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:labelArrows="true"
+        app:labelBottomDivider="false"
+        app:labelDividerIndent="40dp"
+        app:labelIcon="@drawable/setting"
+        app:labelText="@string/mani_setting"
+        app:labelTextSize="16px" />
+
+
+</LinearLayout>
+

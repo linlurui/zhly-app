@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WelcomeActivity"
+    >
+
+    <ImageView
+        android:id="@+id/ic_logo"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_70"
+        app:srcCompat="@drawable/login_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ic_logo"
+        android:text="@string/app_name"
+        android:textColor="@color/text_blue"
+        android:textSize="@dimen/sp_22"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <include layout="@layout/activity_company_name" />
+</RelativeLayout>

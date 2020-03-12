@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.yizhitong.wisdombuilding.view.LabelEditRow
+            android:id="@+id/personnel_company"
+            style="@style/jx_label_row"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="@dimen/jx_content_padding"
+            app:labelText="@string/supplement_company"
+            app:labelTextSize="16px" />
+
+        <com.yizhitong.wisdombuilding.view.LabelEditRow
+            android:id="@+id/personnel_department"
+            style="@style/jx_label_row"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="@dimen/jx_content_padding"
+            app:labelText="@string/supplement_department"
+            app:labelTextSize="16px" />
+
+        <com.yizhitong.wisdombuilding.view.LabelEditRow
+            android:id="@+id/personnel_storey"
+            style="@style/jx_label_row"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="@dimen/jx_content_padding"
+            app:labelText="@string/supplement_storey"
+            app:labelTextSize="16px" />
+
+        <com.yizhitong.wisdombuilding.view.LabelTextRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:labelArrows="false"
+            app:labelBottomDivider="false"
+            app:labelDividerIndent="40dp"
+            app:labelText="@string/supplement_remarks"
+            app:labelTextSize="16px" />
+
+        <EditText
+            android:paddingLeft="@dimen/dp_20"
+            android:id="@+id/personnel_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="@dimen/dp_70" />
+    </LinearLayout>
+
+
+</ScrollView>
+
